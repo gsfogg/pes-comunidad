@@ -18,7 +18,7 @@ import pes.comunidad.util.Constantes;
 public class SorteoTest implements Constantes {
 
 	@Test
-	public void elCuadroNoEsNuloAlSortearEliminacionDirecta() {
+	public void creaUnCuadroConElFormatoDelTorneo() {
 		
 		Cuadro cuadro = inicializarTorneo(TipoFormato.ELIMINACION_DIRECTA.getDescripcion()).sortear();
 		
