@@ -1,5 +1,6 @@
 package pes.comunidad.sorteo;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import java.util.Arrays;
@@ -22,6 +23,7 @@ public class SorteoTest implements Constantes {
 		Cuadro cuadro = inicializarTorneo(TipoFormato.ELIMINACION_DIRECTA.getDescripcion()).sortear();
 		
 		assertNotNull(cuadro);
+		assertEquals(cuadro.getTipoCuadro(), TipoFormato.ELIMINACION_DIRECTA.getDescripcion());
 	}
 
 	private Torneo inicializarTorneo(String tipoFormato) {

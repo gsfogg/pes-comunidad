@@ -13,7 +13,10 @@ public class Torneo {
 	private List<Equipo> equipos;
 	
 	public Cuadro sortear() {
-		return new Cuadro();
+		
+		Cuadro cuadro = new Cuadro();
+		cuadro.setTipoCuadro(this.formato.getDescripcion());
+		return cuadro;
 	}
 	
 	public Integer getId() {
