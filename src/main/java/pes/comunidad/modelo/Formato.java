@@ -38,4 +38,9 @@ public class Formato {
 		this.cantidadDeEquipos = cantidadeEquipos;
 		return this;
 	}
+	
+	public Formato conDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+		return this;
+	}
 }
