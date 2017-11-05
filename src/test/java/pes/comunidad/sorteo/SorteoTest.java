@@ -16,13 +16,8 @@ public class SorteoTest {
 	@Test
 	public void elCuadroNoEsNuloAlSortear() {
 		
-		/* Inicializacion */
-		Torneo torneo = inicializarTorneo();
+		Cuadro cuadro = inicializarTorneo().sortear();
 		
-		/* Operacion */
-		Cuadro cuadro = torneo.sortear();
-		
-		/* Expectativas */
 		assertNotNull(cuadro);
 	}
 
