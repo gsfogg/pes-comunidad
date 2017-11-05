@@ -14,7 +14,7 @@ import pes.comunidad.modelo.Torneo;
 public class SorteoTest {
 
 	@Test
-	public void elSorteoNoEsNulo() {
+	public void elCuadroNoEsNuloAlSortear() {
 		
 		/* Inicializacion */
 		Torneo torneo = inicializarTorneo();
@@ -27,6 +27,7 @@ public class SorteoTest {
 	}
 
 	private Torneo inicializarTorneo() {
+		
 		List<Equipo> equipos = Arrays.asList(Equipo.crear().conNombre("Holanda").conRanking(1),
 											 Equipo.crear().conNombre("Inglaterra").conRanking(2),
 											 Equipo.crear().conNombre("España").conRanking(3),
